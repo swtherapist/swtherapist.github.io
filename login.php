@@ -17,7 +17,7 @@ $result = $query->get_result();
 if ($result->num_rows > 0) {
     echo json_encode(['success' => true, 'message' => 'Login successful.']);
 } else {
-    echo json_encode(['success' => false, 'message' => 'Invalid credentials.']);
+    echo json_encode(['success' => false, 'message' => 'Invalid credentials2.']);
 }
 $query->close();
 $conn->close();
