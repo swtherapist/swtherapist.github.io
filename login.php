@@ -6,7 +6,7 @@ if ($conn->connect_error) {
     die(json_encode(['success' => false, 'message' => 'Database connection failed.']));
 }
 
-$email = $_POST['id'];
+$email = $_POST['email'];
 $password = $_POST['password'];
 
 $query = $conn->prepare('SELECT * FROM users WHERE email = ? AND password = ?');
